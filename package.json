@@ -1,7 +1,7 @@
 {
   "name": "desktop",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "main": "electron/main.js",
   "author": "mvp",
   "description": "This is MVP Test app",
@@ -118,7 +118,7 @@
       {
         "provider": "github",
         "owner": "ali-mvp",
-        "private": true
+        "private": false
       }
     ],
     "win": {
