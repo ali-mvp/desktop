@@ -77,7 +77,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "electron:start": "concurrently \"npm start\" \"wait-on http://localhost:3000 && electron .\"",
-    "electron:build": "npm run build && electron-builder build  --win --publish never"
+    "electron:build": "npm run build && electron-builder build  --win --publish never",
+    "electron:build-p": "npm run build && electron-builder build  --win --publish always"
   },
   "eslintConfig": {
     "extends": [
