@@ -5,6 +5,7 @@
   "main": "electron/main.js",
   "author": "mvp",
   "description": "This is MVP Test app",
+  "artifactName": "${productName}_${version}.${ext}",
   "dependencies": {
     "@amir04lm26/react-modern-calendar-date-picker": "^1.0.1",
     "@testing-library/jest-dom": "^5.14.1",

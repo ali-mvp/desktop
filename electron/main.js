@@ -41,15 +41,14 @@ function createWindow() {
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.whenReady().then(() => {
-  if (!isDev) {
-    let autoLaunch = new AutoLaunch({
-      name: "desktop",
-      path: app.getPath("exe"),
-    });
-    autoLaunch.isEnabled().then((isEnabled) => {
-      if (!isEnabled) autoLaunch.enable();
-    });
-  }
+  let autoLaunch = new AutoLaunch({
+    name: "ERC",
+    path: app.getPath("exe"),
+  });
+  autoLaunch.isEnabled().then((isEnabled) => {
+    if (!isEnabled) autoLaunch.enable();
+  });
+
   createWindow();
 });
 
