@@ -6,10 +6,10 @@ const AutoLaunch = require("auto-launch");
 const { autoUpdater } = require("electron-updater");
 
 const log = require("electron-log");
-
+let win ;
 function createWindow() {
   // Create the browser window.
-  const win = new BrowserWindow({
+  win = new BrowserWindow({
     show: false,
     frame: false,
     webPreferences: {
