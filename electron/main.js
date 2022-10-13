@@ -43,7 +43,7 @@ function createWindow() {
 app.whenReady().then(() => {
   if (!isDev) {
     let autoLaunch = new AutoLaunch({
-      name: "erc",
+      name: "desktop",
       path: app.getPath("exe"),
     });
     autoLaunch.isEnabled().then((isEnabled) => {
